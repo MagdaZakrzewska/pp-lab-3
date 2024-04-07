@@ -50,7 +50,7 @@ public class Main {
         }
 
         for (int coloredCircleIndex = 0; coloredCircleIndex < 10; coloredCircleIndex++) {
-            var coloredCircle = coloredCircles[coloredCircleIndex];
+            ColoredCircle coloredCircle = coloredCircles[coloredCircleIndex];
             coloredCircle.calculateArea();
             System.out.printf("Circle color: %s", coloredCircle.getColor());
         }
