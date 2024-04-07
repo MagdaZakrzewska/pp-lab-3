@@ -50,7 +50,7 @@ public class Main {
         }
 
         for (int coloredCircleIndex = 0; coloredCircleIndex < 10; coloredCircleIndex++) {
-            var coloredCircle = coloredCircles[coloredCircleIndex];
+            ColoredCircle coloredCircle = coloredCircles[coloredCircleIndex];
             coloredCircle.calculateArea();
             System.out.printf("Circle color: %s", coloredCircle.getColor());
         }
@@ -59,19 +59,19 @@ public class Main {
     private static Color getRandomColor() {
         Random rand = new Random();
         Color color;
-        switch (rand.nextInt(1)) {
+        switch (rand.nextInt(3)) {
             case 1: {
-                color =  Color.green;
+                color =  Color.red;
                 break;
             }
 
             case 2: {
-                color =  Color.yellow;
+                color =  Color.black;
                 break;
             }
 
             default: {
-                color = Color.red;
+                color = Color.green;
                 break;
             }
         }
